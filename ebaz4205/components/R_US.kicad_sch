@@ -1,0 +1,140 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Device:R_US" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (id 0) (at 2.54 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R_US" (id 1) (at -2.54 0 90)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 1.016 -0.254 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "R res resistor" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor, US symbol" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_US_0_1"
+        (polyline
+          (pts
+            (xy 0 -2.286)
+            (xy 0 -2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 0 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 -0.762)
+            (xy 1.016 -1.143)
+            (xy 0 -1.524)
+            (xy -1.016 -1.905)
+            (xy 0 -2.286)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy 1.016 0.381)
+            (xy 0 0)
+            (xy -1.016 -0.381)
+            (xy 0 -0.762)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.286)
+            (xy 1.016 1.905)
+            (xy 0 1.524)
+            (xy -1.016 1.143)
+            (xy 0 0.762)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "R_US_1_1"
+        (pin passive line (at 0 3.81 270) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 1.27)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (polyline (pts (xy 0 0) (xy 0 10.16))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 0) (xy 33.02 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 10.16) (xy 33.02 10.16))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 33.02 10.16) (xy 33.02 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+
+  (text "D R.*\nF .*\nV .*" (at 0 0 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+
+  (global_label "1" (shape input) (at 12.7 5.08 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 7.5534 5.0006 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "2" (shape input) (at 20.32 5.08 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 25.4666 5.0006 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+
+  (symbol (lib_id "Device:R_US") (at 16.51 5.08 90) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "93a03812-9ad2-4f98-81ae-a8c92d489812")
+    (property "Reference" "R?" (id 0) (at 16.51 2.54 90))
+    (property "Value" "R_US" (id 1) (at 16.51 7.62 90))
+    (property "Footprint" "" (id 2) (at 16.764 4.064 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 16.51 5.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/93a03812-9ad2-4f98-81ae-a8c92d489812"
+      (reference "R?") (unit 1) (value "R_US") (footprint "")
+    )
+  )
+)

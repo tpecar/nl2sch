@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python: nl2sch",
+            "type": "python",
+            "request": "launch",
+            "program": "nl2sch.py",
+            "args": ["./ebaz4205/ebit_ad.Net", "./ebaz4205/components/", "./ebaz4205/ebaz4205.kicad_sch", "--skip-missing"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: net",
+            "type": "python",
+            "request": "launch",
+            "program": "net.py",
+            "args": ["./ebaz4205/ebit_ad.Net"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: comp",
+            "type": "python",
+            "request": "launch",
+            "program": "comp.py",
+            "args": ["./ebaz4205/components/R_US.kicad_sch", "./ebaz4205/test.kicad_sch"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
