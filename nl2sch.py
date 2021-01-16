@@ -9,26 +9,7 @@ import argparse
 from typing import DefaultDict
 
 from net import Netlist
-from comp import PlacedSchComponent, SchComponent
-
-# Empty schematic
-"""
-(kicad_sch (version 20201015) (generator eeschema)
-
-  (paper "A4")
-
-  (lib_symbols
-  )
-
-
-  (sheet_instances
-    (path "/" (page ""))
-  )
-
-  (symbol_instances
-  )
-)
-"""
+from comp import MatchedSchComponent, PlacedSchComponent, SchComponent
 
 def main(arguments):
 
@@ -53,6 +34,18 @@ def main(arguments):
         '-s', '--skip-missing',
         help='Skip NetComponent with no SchComponent matches',
         action='store_true'
+    )
+    parser.add_argument(
+        '--width',
+        help='Maximum width of a component group in schematic',
+        type=int,
+        default=450
+    )
+    parser.add_argument(
+        '--spacing',
+        help='Spacing between groups of components',
+        type=int,
+        default=10
     )
 
     args = parser.parse_args(arguments)
@@ -82,94 +75,101 @@ def main(arguments):
     # TODO - do a simple placing algorithm that groups components based on common nets
     #        (select a central component, and the algo places everything around it)
 
-    # Currently we just dump the components by descending pin count
-    net_comps = sorted(netlist.comps.values(), key = lambda c : len(c.connections), reverse=True)
+    # Phase 1 - match & collect
+    no_skipped = 0
 
-    # Last x, y for new SchComponents
-    last_x, last_y = 0,0
-    # Schematic bounds
-    max_x, max_y = 0,0
+    all_matched_comps : dict[SchComponent, list[MatchedSchComponent]] = DefaultDict(list)
 
-    placed_comps: dict[SchComponent : list[PlacedSchComponent]] = DefaultDict(list)
-
-    for net_comp in net_comps:
+    for net_comp in netlist.comps.values():
         net_comp_str = f'[{net_comp.designator} {net_comp.footprint} {net_comp.value}]'
 
         # Find first SchComponent that can match the D, F, V of net_comp
         for sch_comp in sch_comps:
-            if(sch_comp.match(net_comp.designator, net_comp.footprint, net_comp.value)):
-                
-                placed_comps_grp: list[PlacedSchComponent] = placed_comps[sch_comp]
-
-                # If we matched this SchComponent group before, place it in the same row
-                #
-                # TODO: KiCad doesn't like big schematics, so implement spilling of same group components
-                #       into next row - this means though that we first need to collect the components,
-                #       determine the bounds of the whole group, and _then_ place them
-                #
-                #       Phase 1 - detect & collect
-                #       Phase 2 - place
-                #
-                if placed_comps_grp:
-                    place_x = placed_comps_grp[-1].x + placed_comps_grp[-1].bounds[0]
-                    place_y = placed_comps_grp[-1].y
-
-                # Otherwise, start new row
-                else:
-                    place_x = last_x
-                    place_y = last_y
-
-                    # Advance last x, y for new category
-                    last_y += sch_comp.bounds[1]
-
-                if place_x > max_x:
-                    max_x = place_x
-                
-                if place_y > max_y:
-                    max_y = place_y
-
-                placed_comp = sch_comp.place(place_x, place_y, net_comp.designator, net_comp.value, net_comp.connections)
-                placed_comps_grp.append(placed_comp)
-
-                print(f'PLACED {net_comp_str} as\n{placed_comp}\n')
-                
+            match = sch_comp.match(net_comp)
+            if match:
+                all_matched_comps[sch_comp].append(match)
                 break
         else:
             # We didn't match any sch_comp
             if args.skip_missing:
                 print(f'SKIPPING {net_comp_str}')
+                no_skipped += 1
             else:
                 print(f'ERROR: {net_comp_str} could not be mapped to any SchComponent')
                 sys.exit(1)
 
-    # Render placed components into KiCad schematic
-    all_placed = [pc for pc_list in placed_comps.values() for pc in pc_list]
+    if args.skip_missing:
+        print(f'Skipped {no_skipped} netlist components.')
 
-    lib_symbol = '\n'.join([p.lib_symbol for p in all_placed])
-    labels = '\n'.join([p.labels for p in all_placed])
-    symbol = '\n'.join([p.symbol for p in all_placed])
-    symbol_instance = '\n'.join([p.symbol_instance for p in all_placed])
+    # Phase 2 - place
+
+    # Dump the components by descending pin count
+    all_matched_comps_sorted = sorted(
+        all_matched_comps.items(),
+        key = lambda m : len(m[0].label_tpls),
+        reverse=True
+    )
+    all_placed_comps : list[PlacedSchComponent] = []
+
+    x, y = 0,0
+    max_x = 0
+
+    for sch_comp, matched_comps in all_matched_comps_sorted:
+        for matched_comp in matched_comps:
+
+            all_placed_comps.append(matched_comp.place((x,y)))
+
+            new_x = x + sch_comp.bounds[0]
+            new_y = y + sch_comp.bounds[1]
+
+            # If the next component would be outside specified bounds,
+            # we will place it in the next row
+            if new_x > args.width:
+                x = 0
+                y = new_y
+            else:
+                # otherwise move within the row
+                x = new_x
+            
+            # Expand schematic bounds, if necessary
+            if new_x > max_x:
+                max_x = new_x
+
+        else:
+            if x:
+                # If we're currently in a non-empty row, move into new row
+                y = y + sch_comp.bounds[1]
+            x = 0
+            y += args.spacing
+
+    # Render placed components into KiCad schematic
+
+    rendered_lib_symbol = '\n'.join([p.lib_symbol for p in all_matched_comps.keys()])
+
+    rendered_labels = '\n'.join([p.rendered_labels for p in all_placed_comps])
+    rendered_symbol = '\n'.join([p.rendered_symbol for p in all_placed_comps])
+    rendered_symbol_instance = '\n'.join([p.rendered_symbol_inst for p in all_placed_comps])
 
     kicad_sch = open(args.kicad_sch_path, 'w')
     kicad_sch.write(
 f'''
 (kicad_sch (version 20201015) (generator eeschema)
 
-  (paper "User" {max_x} {max_y})
+  (paper "User" {max_x} {y})
 
   (lib_symbols
-{lib_symbol}
+{rendered_lib_symbol}
   )
 
-{labels}
-{symbol}
+{rendered_labels}
+{rendered_symbol}
 
   (sheet_instances
     (path "/" (page ""))
   )
 
   (symbol_instances
-{symbol_instance}
+{rendered_symbol_instance}
   )
 )
 '''
