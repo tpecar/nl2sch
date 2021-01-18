@@ -1,0 +1,432 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Connector:RJ45_LED" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (id 0) (at -5.08 13.97 0)
+        (effects (font (size 1.27 1.27)) (justify right))
+      )
+      (property "Value" "RJ45_LED" (id 1) (at 1.27 13.97 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (id 2) (at 0 0.635 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0.635 90)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "8P8C RJ female connector led" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "8P8C* RJ45*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "RJ45_LED_0_1"
+        (rectangle (start 7.62 12.7) (end -7.62 -10.16)
+          (stroke (width 0.254)) (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -7.62 -7.62)
+            (xy -6.35 -7.62)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -7.62 -5.08)
+            (xy -6.35 -5.08)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -7.62 7.62)
+            (xy -6.35 7.62)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -7.62 10.16)
+            (xy -6.35 10.16)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.842 8.382)
+            (xy -6.858 8.382)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -7.62)
+            (xy -6.35 -6.858)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -5.08)
+            (xy -6.35 -5.842)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 7.62)
+            (xy -6.35 8.382)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 10.16)
+            (xy -6.35 9.398)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 4.445)
+            (xy -6.35 4.445)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 5.715)
+            (xy -6.35 5.715)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.953 8.128)
+            (xy -5.334 8.255)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.953 8.763)
+            (xy -5.334 8.89)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -3.175)
+            (xy -5.08 -3.175)
+            (xy -5.08 -3.175)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -1.905)
+            (xy -5.08 -1.905)
+            (xy -5.08 -1.905)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -0.635)
+            (xy -5.08 -0.635)
+            (xy -5.08 -0.635)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 0.635)
+            (xy -5.08 0.635)
+            (xy -5.08 0.635)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 1.905)
+            (xy -5.08 1.905)
+            (xy -5.08 1.905)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.461 8.636)
+            (xy -4.953 8.128)
+            (xy -5.08 8.509)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.461 9.271)
+            (xy -4.953 8.763)
+            (xy -5.08 9.144)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 3.175)
+            (xy -6.35 3.175)
+            (xy -6.35 3.175)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 8.382)
+            (xy -5.842 9.398)
+            (xy -6.858 9.398)
+            (xy -6.35 8.382)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -4.445)
+            (xy -6.35 6.985)
+            (xy 3.81 6.985)
+            (xy 3.81 4.445)
+            (xy 5.08 4.445)
+            (xy 5.08 3.175)
+            (xy 6.35 3.175)
+            (xy 6.35 -0.635)
+            (xy 5.08 -0.635)
+            (xy 5.08 -1.905)
+            (xy 3.81 -1.905)
+            (xy 3.81 -4.445)
+            (xy -6.35 -4.445)
+            (xy -6.35 -4.445)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.842 -6.858)
+            (xy -6.858 -6.858)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.953 -7.112)
+            (xy -5.334 -6.985)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.953 -6.477)
+            (xy -5.334 -6.35)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.461 -6.604)
+            (xy -4.953 -7.112)
+            (xy -5.08 -6.731)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.461 -5.969)
+            (xy -4.953 -6.477)
+            (xy -5.08 -6.096)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -6.35 -6.858)
+            (xy -5.842 -5.842)
+            (xy -6.858 -5.842)
+            (xy -6.35 -6.858)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "RJ45_LED_1_1"
+        (pin passive line (at 10.16 -7.62 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -10.16 7.62 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "10" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -10.16 -5.08 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "11" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -10.16 -7.62 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "12" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 -5.08 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 -2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 0 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "5" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 5.08 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "6" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 7.62 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "7" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 10.16 10.16 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "8" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -10.16 10.16 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "9" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (polyline (pts (xy 0 0) (xy 0 34.29))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 0) (xy 46.99 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 34.29) (xy 46.99 34.29))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 46.99 34.29) (xy 46.99 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+
+  (text "D .*\nF .*\nV RJ45" (at 0 0 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+
+  (global_label "9" (shape input) (at 12.7 8.89 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 7.5534 8.8106 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "10" (shape input) (at 12.7 11.43 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.3439 11.3506 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "11" (shape input) (at 12.7 24.13 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.3439 24.0506 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "12" (shape input) (at 12.7 26.67 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.3439 26.5906 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "8" (shape input) (at 33.02 8.89 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 8.8106 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "7" (shape input) (at 33.02 11.43 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 11.3506 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "6" (shape input) (at 33.02 13.97 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 13.8906 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "5" (shape input) (at 33.02 16.51 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 16.4306 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "4" (shape input) (at 33.02 19.05 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 18.9706 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "3" (shape input) (at 33.02 21.59 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 21.5106 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "2" (shape input) (at 33.02 24.13 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 24.0506 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "1" (shape input) (at 33.02 26.67 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 38.1666 26.5906 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+
+  (symbol (lib_id "Connector:RJ45_LED") (at 22.86 19.05 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "1d2d4ac0-ae24-4298-97cf-bc2bc96f293e")
+    (property "Reference" "J?" (id 0) (at 17.78 5.08 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "RJ45_LED" (id 1) (at 24.13 5.08 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (id 2) (at 22.86 18.415 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 22.86 18.415 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/1d2d4ac0-ae24-4298-97cf-bc2bc96f293e"
+      (reference "J?") (unit 1) (value "RJ45_LED") (footprint "")
+    )
+  )
+)

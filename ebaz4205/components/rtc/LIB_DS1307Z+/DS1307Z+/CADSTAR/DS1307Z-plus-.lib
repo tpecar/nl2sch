@@ -1,0 +1,18 @@
+.DS1307Z-plus- :1 ;DS1307Z+, Real Time Clock, Alarm, Calendar, Clock, 56B RAM, I2C, 5V, 8-Pin SOIC
+SOIC127P600X175-8N
+*STM IC
+*NGS
+*PLB 1="X1" 2="X2" 3="VBAT" 4="GND" 5="SDA" 6="SCL" 7="SQW/OUT" 8="VCC"
+*MXP 8
+*DFN DS1307Z-plus-
+~!Manufacturer_Name (Maxim Integrated)
+~!Manufacturer_Part_Number (DS1307Z+)
+~!Mouser Part Number (700-DS1307Z)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Maxim-Integrated/DS1307Z%2b/?qs=0Y9aZN%252BMVCUvNDMAh9aCtw%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (http://datasheets.maximintegrated.com/en/ds/DS1307.pdf)
+~!Height (1.75mm)
+~!3D_Model (DS1307Z+)
+DS1307Z-plus-
+1.1!U 2.1!U 3.1!U 4.1!U 8.1!U 7.1!U 6.1!U 5.1!U 

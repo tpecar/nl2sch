@@ -1,0 +1,222 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Isolator:SFH617A-1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (id 0) (at -5.08 5.08 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "SFH617A-1" (id 1) (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Package_DIP:DIP-4_W7.62mm" (id 2) (at -5.08 -5.08 0)
+        (effects (font (size 1.27 1.27) italic) (justify left) hide)
+      )
+      (property "Datasheet" "http://www.vishay.com/docs/83740/sfh617a.pdf" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify left) hide)
+      )
+      (property "ki_keywords" "Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Optocoupler, Phototransistor Output, 5300 VRMS, VCEO 70V, CTR% 40-80, -55 to +110 degree Celcius, UL, BSI, FIMKO, cUL, THT PDIP-4" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "DIP*W7.62mm*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "SFH617A-1_0_1"
+        (rectangle (start -5.08 3.81) (end 5.08 -3.81)
+          (stroke (width 0.254)) (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -3.175 -0.635)
+            (xy -1.905 -0.635)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 0.635)
+            (xy 4.445 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 4.445 -2.54)
+            (xy 2.54 -0.635)
+          )
+          (stroke (width 0)) (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 4.445 -2.54)
+            (xy 5.08 -2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 4.445 2.54)
+            (xy 5.08 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 -0.635)
+            (xy -2.54 -2.54)
+            (xy -5.08 -2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 2.54 1.905)
+            (xy 2.54 -1.905)
+            (xy 2.54 -1.905)
+          )
+          (stroke (width 0.508)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -5.08 2.54)
+            (xy -2.54 2.54)
+            (xy -2.54 -1.27)
+            (xy -2.54 0.635)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.54 -0.635)
+            (xy -3.175 0.635)
+            (xy -1.905 0.635)
+            (xy -2.54 -0.635)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.508 -0.508)
+            (xy 0.762 -0.508)
+            (xy 0.381 -0.635)
+            (xy 0.381 -0.381)
+            (xy 0.762 -0.508)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -0.508 0.508)
+            (xy 0.762 0.508)
+            (xy 0.381 0.381)
+            (xy 0.381 0.635)
+            (xy 0.762 0.508)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 3.048 -1.651)
+            (xy 3.556 -1.143)
+            (xy 4.064 -2.159)
+            (xy 3.048 -1.651)
+            (xy 3.048 -1.651)
+          )
+          (stroke (width 0)) (fill (type outline))
+        )
+      )
+      (symbol "SFH617A-1_1_1"
+        (pin passive line (at -7.62 2.54 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -7.62 -2.54 0) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 -2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (polyline (pts (xy 0 0) (xy 0 16.51))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 0) (xy 49.53 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 16.51) (xy 49.53 16.51))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 49.53 16.51) (xy 49.53 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+
+  (text "D .*\nF .*\nV (EL|PC)\\d+" (at 0 0 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+
+  (global_label "1" (shape input) (at 16.51 6.35 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 11.3634 6.2706 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "2" (shape input) (at 16.51 11.43 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 11.3634 11.3506 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "4" (shape input) (at 31.75 6.35 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 36.8966 6.2706 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "3" (shape input) (at 31.75 11.43 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 36.8966 11.3506 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+
+  (symbol (lib_id "Isolator:SFH617A-1") (at 24.13 8.89 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "787a1171-deee-4184-a01d-ec7b1313eeac")
+    (property "Reference" "U?" (id 0) (at 19.05 3.81 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "SFH617A-1" (id 1) (at 24.13 3.81 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Package_DIP:DIP-4_W7.62mm" (id 2) (at 19.05 13.97 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "http://www.vishay.com/docs/83740/sfh617a.pdf" (id 3) (at 24.13 8.89 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/787a1171-deee-4184-a01d-ec7b1313eeac"
+      (reference "U?") (unit 1) (value "SFH617A-1") (footprint "Package_DIP:DIP-4_W7.62mm")
+    )
+  )
+)

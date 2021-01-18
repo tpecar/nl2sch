@@ -1,0 +1,53 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# FSMRACD
+#
+DEF FSMRACD SW 0 40 Y Y 1 L N
+F0 "SW" 0 300 50 H V L CNN
+F1 "FSMRACD" 0 400 50 H V L CNN
+F2 "TE_Connectivity-FSMRACD-*" 0 500 50 H I L CNN
+F3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1437566-1%7FG%7Fpdf%7FEnglish%7FENG_CD_1437566-1_G.pdf%7F9-1437565-9" 0 600 50 H I L CNN
+F4 "No" 0 700 50 H I L CNN "automotive"
+F5 "Switch" 0 800 50 H I L CNN "category"
+F6 "50mA" 0 900 50 H I L CNN "contact current rating"
+F7 "100mΩ" 0 1000 50 H I L CNN "contact resistance"
+F8 "Electromechanical" 0 1100 50 H I L CNN "device class L1"
+F9 "Switches" 0 1200 50 H I L CNN "device class L2"
+F10 "Tactile Switches" 0 1300 50 H I L CNN "device class L3"
+F11 "SWITCH TACTILE SPST-NO 0.05A 24V" 0 1400 50 H I L CNN "digikey description"
+F12 "450-1177-ND" 0 1500 50 H I L CNN "digikey part number"
+F13 "100000Cycles" 0 1600 50 H I L CNN "electromechanical life"
+F14 "7.3mm" 0 1700 50 H I L CNN "height"
+F15 "Yes" 0 1800 50 H I L CNN "lead free"
+F16 "40f7c9658163cfbb" 0 1900 50 H I L CNN "library id"
+F17 "TE Connectivity" 0 2000 50 H I L CNN "manufacturer"
+F18 "Through Hole" 0 2100 50 H I L CNN "mount"
+F19 "Tactile Switches TACTILE SWITCH R/A PB" 0 2200 50 H I L CNN "mouser description"
+F20 "506-FSMRACD" 0 2300 50 H I L CNN "mouser part number"
+F21 "160gf" 0 2400 50 H I L CNN "operating force"
+F22 "SW_PTH" 0 2500 50 H I L CNN "package"
+F23 "Yes" 0 2600 50 H I L CNN "rohs"
+F24 "+85°C" 0 2700 50 H I L CNN "temperature range high"
+F25 "-35°C" 0 2800 50 H I L CNN "temperature range low"
+F26 "SPST-NO" 0 2900 50 H I L CNN "throw configuration"
+F27 "24V" 0 3000 50 H I L CNN "voltage rating DC"
+DRAW
+C 430 50 20 1 1 0 N
+C 570 50 20 1 1 0 N
+P 2 1 1 0 200 -250 200 0 N
+P 2 1 1 0 200 0 200 200 N
+P 2 1 1 0 200 50 400 50 N
+P 2 1 1 0 200 200 800 200 N
+P 2 1 1 0 450 60 550 120 N
+P 2 1 1 0 800 -250 200 -250 N
+P 2 1 1 0 800 50 600 50 N
+P 2 1 1 0 800 200 800 -250 N
+X MNT_1 1 200 -200 100 L 40 40 1 1 P
+X MNT_2 2 200 -100 100 L 40 40 1 1 P
+X 3 3 100 50 100 R 40 0 1 1 P
+X 4 4 900 50 100 L 40 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library

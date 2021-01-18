@@ -3,11 +3,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Device:L" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
-      (property "Reference" "L" (id 0) (at -1.27 0 90)
+    (symbol "Device:LED_ALT" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "L" (id 1) (at 1.905 0 90)
+      (property "Value" "LED_ALT" (id 1) (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -16,36 +16,67 @@
       (property "Datasheet" "~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "inductor choke coil reactor magnetic" (id 4) (at 0 0 0)
+      (property "ki_keywords" "LED diode" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Inductor" (id 5) (at 0 0 0)
+      (property "ki_description" "Light emitting diode, filled shape" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Choke_* *Coil* Inductor_* L_*" (id 6) (at 0 0 0)
+      (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "L_0_1"
-        (arc (start 0 -2.54) (end 0 -1.27) (radius (at 0 -1.905) (length 0.635) (angles -89.9 89.9))
+      (symbol "LED_ALT_0_1"
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 1.27)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 0)
+            (xy 1.27 0)
+          )
           (stroke (width 0)) (fill (type none))
         )
-        (arc (start 0 -1.27) (end 0 0) (radius (at 0 -0.635) (length 0.635) (angles -89.9 89.9))
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 1.27)
+            (xy -1.27 0)
+            (xy 1.27 -1.27)
+          )
+          (stroke (width 0.254)) (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy -3.048 -0.762)
+            (xy -4.572 -2.286)
+            (xy -3.81 -2.286)
+            (xy -4.572 -2.286)
+            (xy -4.572 -1.524)
+          )
           (stroke (width 0)) (fill (type none))
         )
-        (arc (start 0 0) (end 0 1.27) (radius (at 0 0.635) (length 0.635) (angles -89.9 89.9))
-          (stroke (width 0)) (fill (type none))
-        )
-        (arc (start 0 1.27) (end 0 2.54) (radius (at 0 1.905) (length 0.635) (angles -89.9 89.9))
+        (polyline
+          (pts
+            (xy -1.778 -0.762)
+            (xy -3.302 -2.286)
+            (xy -2.54 -2.286)
+            (xy -3.302 -2.286)
+            (xy -3.302 -1.524)
+          )
           (stroke (width 0)) (fill (type none))
         )
       )
-      (symbol "L_1_1"
-        (pin passive line (at 0 3.81 270) (length 1.27)
-          (name "1" (effects (font (size 1.27 1.27))))
+      (symbol "LED_ALT_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54)
+          (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin passive line (at 0 -3.81 90) (length 1.27)
-          (name "2" (effects (font (size 1.27 1.27))))
+        (pin passive line (at 3.81 0 180) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
         )
       )
@@ -66,7 +97,7 @@
     (stroke (width 0) (type dash) (color 0 0 0 0))
   )
 
-  (text "D (L\\d+|FB.*)\nF .*\nV .*" (at 0 0 0)
+  (text "D LED\\d+\nF .*\nV .*" (at 0 0 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
 
@@ -83,11 +114,11 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "Device:L") (at 16.51 5.08 90) (unit 1)
+  (symbol (lib_id "Device:LED_ALT") (at 16.51 5.08 180) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "c384dce7-3587-4a56-b341-110e41afcf1c")
-    (property "Reference" "L?" (id 0) (at 16.51 6.35 90))
-    (property "Value" "L" (id 1) (at 16.51 3.175 90))
+    (uuid "1df90115-e60d-444f-82df-be57494625d5")
+    (property "Reference" "D?" (id 0) (at 16.51 7.62 0))
+    (property "Value" "LED_ALT" (id 1) (at 16.51 2.54 0))
     (property "Footprint" "" (id 2) (at 16.51 5.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -101,8 +132,8 @@
   )
 
   (symbol_instances
-    (path "/c384dce7-3587-4a56-b341-110e41afcf1c"
-      (reference "L?") (unit 1) (value "L") (footprint "")
+    (path "/1df90115-e60d-444f-82df-be57494625d5"
+      (reference "D?") (unit 1) (value "LED_ALT") (footprint "")
     )
   )
 )

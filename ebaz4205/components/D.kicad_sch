@@ -3,11 +3,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Device:D" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:D_ALT" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "D" (id 0) (at 0 2.54 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "D" (id 1) (at 0 -2.54 0)
+      (property "Value" "D_ALT" (id 1) (at 0 -2.54 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -19,13 +19,13 @@
       (property "ki_keywords" "diode" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Diode" (id 5) (at 0 0 0)
+      (property "ki_description" "Diode, filled shape" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "D_0_1"
+      (symbol "D_ALT_0_1"
         (polyline
           (pts
             (xy -1.27 1.27)
@@ -47,10 +47,10 @@
             (xy -1.27 0)
             (xy 1.27 1.27)
           )
-          (stroke (width 0.254)) (fill (type none))
+          (stroke (width 0.254)) (fill (type outline))
         )
       )
-      (symbol "D_1_1"
+      (symbol "D_ALT_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54)
           (name "K" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -77,7 +77,7 @@
     (stroke (width 0) (type dash) (color 0 0 0 0))
   )
 
-  (text "D D.*\nF .*\nV .*" (at 0 0 0)
+  (text "D D\\d+\nF .*\nV .*" (at 0 0 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
   )
 
@@ -94,11 +94,11 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "Device:D") (at 16.51 5.08 180) (unit 1)
+  (symbol (lib_id "Device:D_ALT") (at 16.51 5.08 180) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "5e08f97d-fa45-4e39-a308-17279ec73809")
+    (uuid "4b23dc1d-1cee-4e18-91f9-392beea5e7b2")
     (property "Reference" "D?" (id 0) (at 16.51 7.62 0))
-    (property "Value" "D" (id 1) (at 16.51 2.54 0))
+    (property "Value" "D_ALT" (id 1) (at 16.51 2.54 0))
     (property "Footprint" "" (id 2) (at 16.51 5.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -112,8 +112,8 @@
   )
 
   (symbol_instances
-    (path "/5e08f97d-fa45-4e39-a308-17279ec73809"
-      (reference "D?") (unit 1) (value "D") (footprint "")
+    (path "/4b23dc1d-1cee-4e18-91f9-392beea5e7b2"
+      (reference "D?") (unit 1) (value "D_ALT") (footprint "")
     )
   )
 )

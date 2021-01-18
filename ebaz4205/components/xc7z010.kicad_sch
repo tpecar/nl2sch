@@ -24,7 +24,7 @@
       )
       (symbol "xc7z010clg400_1_1"
         (rectangle (start 5.08 2.54) (end 22.86 -55.88)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin input line (at 0 0 0) (length 5.08)
           (name "CFGBVS_0" (effects (font (size 1.27 1.27))))
@@ -117,7 +117,7 @@
       )
       (symbol "xc7z010clg400_2_1"
         (rectangle (start 5.08 2.54) (end 20.32 -2.54)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin power_in line (at 0 0 0) (length 5.08)
           (name "VCCO_13[4]" (effects (font (size 1.27 1.27))))
@@ -138,7 +138,7 @@
       )
       (symbol "xc7z010clg400_3_1"
         (rectangle (start 5.08 2.54) (end 38.1 -129.54)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin bidirectional line (at 0 0 0) (length 5.08)
           (name "IO_0_34" (effects (font (size 1.27 1.27))))
@@ -367,7 +367,7 @@
       )
       (symbol "xc7z010clg400_4_1"
         (rectangle (start 5.08 2.54) (end 38.1 -129.54)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin bidirectional line (at 0 0 0) (length 5.08)
           (name "IO_0_35" (effects (font (size 1.27 1.27))))
@@ -596,7 +596,7 @@
       )
       (symbol "xc7z010clg400_5_1"
         (rectangle (start 5.08 2.54) (end 27.94 -48.26)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin input line (at 0 0 0) (length 5.08)
           (name "PS_CLK_500" (effects (font (size 1.27 1.27))))
@@ -681,7 +681,7 @@
       )
       (symbol "xc7z010clg400_6_1"
         (rectangle (start 5.08 2.54) (end 27.94 -104.14)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin bidirectional line (at 0 0 0) (length 5.08)
           (name "PS_MIO16_501" (effects (font (size 1.27 1.27))))
@@ -862,7 +862,7 @@
       )
       (symbol "xc7z010clg400_7_1"
         (rectangle (start 5.08 2.54) (end 30.48 -193.04)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin output line (at 0 0 0) (length 5.08)
           (name "PS_DDR_A0_502" (effects (font (size 1.27 1.27))))
@@ -1207,7 +1207,7 @@
       )
       (symbol "xc7z010clg400_8_1"
         (rectangle (start 5.08 2.54) (end 20.32 -17.78)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin power_in line (at 0 0 0) (length 5.08)
           (name "GND[59]" (effects (font (size 1.27 1.27))))
@@ -1564,7 +1564,7 @@
       )
       (symbol "xc7z010clg400_9_1"
         (rectangle (start 5.08 2.54) (end 10.16 -63.5)
-          (stroke (width 0.3048)) (fill (type none))
+          (stroke (width 0.3048)) (fill (type background))
         )
         (pin unconnected line (at 0 0 0) (length 5.08)
           (name "NC" (effects (font (size 1.27 1.27))))
@@ -3299,7 +3299,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 54.61 8.89 0) (unit 2)
     (in_bom yes) (on_board yes)
-    (uuid "7fabca9c-7d52-417a-978c-9de0968580b4")
+    (uuid "82397224-5b5c-49ec-a93b-0ae310f66c94")
     (property "Reference" "U?" (id 0) (at 59.69 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3319,7 +3319,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 387.35 8.89 0) (unit 8)
     (in_bom yes) (on_board yes)
-    (uuid "1141be2b-98b0-4bdc-bc4f-88745b920834")
+    (uuid "5c78c30e-bf31-4039-ac4a-5d9b5e1e6aa4")
     (property "Reference" "U?" (id 0) (at 392.43 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3337,29 +3337,29 @@
     )
   )
 
-  (symbol (lib_id "xilinx7:xc7z010clg400") (at 422.91 8.89 0) (unit 9)
+  (symbol (lib_id "xilinx7:xc7z010clg400") (at 425.45 8.89 0) (unit 9)
     (in_bom yes) (on_board yes)
-    (uuid "d96bc03f-ed27-451b-9816-e768144feaa7")
-    (property "Reference" "U?" (id 0) (at 427.99 2.54 0)
+    (uuid "be912085-bcd1-40c7-91f9-0a007e125679")
+    (property "Reference" "U?" (id 0) (at 430.53 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Value" "xc7z010clg400" (id 1) (at 427.99 5.08 0)
+    (property "Value" "xc7z010clg400" (id 1) (at 430.53 5.08 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 427.99 7.62 0)
+    (property "Footprint" "" (id 2) (at 430.53 7.62 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "Datasheet" "" (id 3) (at 427.99 12.7 0)
+    (property "Datasheet" "" (id 3) (at 430.53 12.7 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
-    (property "desc" "xc7z010clg400" (id 4) (at 427.99 15.24 0)
+    (property "desc" "xc7z010clg400" (id 4) (at 430.53 15.24 0)
       (effects (font (size 1.524 1.524)) (justify left) hide)
     )
   )
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 16.51 8.89 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "75ce1c41-58e5-4ce9-8d09-342d21d3ab2c")
+    (uuid "1397eacc-3db6-4ed4-8a62-0dfb22424df0")
     (property "Reference" "U?" (id 0) (at 21.59 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3379,7 +3379,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 220.98 8.89 0) (unit 5)
     (in_bom yes) (on_board yes)
-    (uuid "4e1f6806-4db2-4e84-8ab7-aff3b55ea1ea")
+    (uuid "6c0ff9ab-5622-4dce-88c2-4ff126cc5a3f")
     (property "Reference" "U?" (id 0) (at 226.06 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3399,7 +3399,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 274.32 8.89 0) (unit 6)
     (in_bom yes) (on_board yes)
-    (uuid "46eaf245-652a-4a0c-b4c7-5691581572d8")
+    (uuid "8f980645-5750-46fc-9dc7-6ed3528176cb")
     (property "Reference" "U?" (id 0) (at 279.4 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3419,7 +3419,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 92.71 8.89 0) (unit 3)
     (in_bom yes) (on_board yes)
-    (uuid "f63a9cfd-f0a2-43e5-8363-55c3ff3fc252")
+    (uuid "8a2f2c4e-0713-4cdb-826d-b28030feed98")
     (property "Reference" "U?" (id 0) (at 97.79 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3439,7 +3439,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 156.21 8.89 0) (unit 4)
     (in_bom yes) (on_board yes)
-    (uuid "0aaf68bf-e290-4ebd-935d-005d0c171fb6")
+    (uuid "556fb7d0-b037-4b5f-8b1b-b7f169fd683a")
     (property "Reference" "U?" (id 0) (at 161.29 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3459,7 +3459,7 @@
 
   (symbol (lib_id "xilinx7:xc7z010clg400") (at 331.47 8.89 0) (unit 7)
     (in_bom yes) (on_board yes)
-    (uuid "10997501-e528-4d99-b860-869fb33a9e11")
+    (uuid "76732ae3-5d45-4fb0-ba9c-5e2d9a365a79")
     (property "Reference" "U?" (id 0) (at 336.55 2.54 0)
       (effects (font (size 1.524 1.524)) (justify left))
     )
@@ -3482,31 +3482,31 @@
   )
 
   (symbol_instances
-    (path "/75ce1c41-58e5-4ce9-8d09-342d21d3ab2c"
+    (path "/1397eacc-3db6-4ed4-8a62-0dfb22424df0"
       (reference "U?") (unit 1) (value "xc7z010clg400") (footprint "")
     )
-    (path "/7fabca9c-7d52-417a-978c-9de0968580b4"
+    (path "/82397224-5b5c-49ec-a93b-0ae310f66c94"
       (reference "U?") (unit 2) (value "xc7z010clg400") (footprint "")
     )
-    (path "/f63a9cfd-f0a2-43e5-8363-55c3ff3fc252"
+    (path "/8a2f2c4e-0713-4cdb-826d-b28030feed98"
       (reference "U?") (unit 3) (value "xc7z010clg400") (footprint "")
     )
-    (path "/0aaf68bf-e290-4ebd-935d-005d0c171fb6"
+    (path "/556fb7d0-b037-4b5f-8b1b-b7f169fd683a"
       (reference "U?") (unit 4) (value "xc7z010clg400") (footprint "")
     )
-    (path "/4e1f6806-4db2-4e84-8ab7-aff3b55ea1ea"
+    (path "/6c0ff9ab-5622-4dce-88c2-4ff126cc5a3f"
       (reference "U?") (unit 5) (value "xc7z010clg400") (footprint "")
     )
-    (path "/46eaf245-652a-4a0c-b4c7-5691581572d8"
+    (path "/8f980645-5750-46fc-9dc7-6ed3528176cb"
       (reference "U?") (unit 6) (value "xc7z010clg400") (footprint "")
     )
-    (path "/10997501-e528-4d99-b860-869fb33a9e11"
+    (path "/76732ae3-5d45-4fb0-ba9c-5e2d9a365a79"
       (reference "U?") (unit 7) (value "xc7z010clg400") (footprint "")
     )
-    (path "/1141be2b-98b0-4bdc-bc4f-88745b920834"
+    (path "/5c78c30e-bf31-4039-ac4a-5d9b5e1e6aa4"
       (reference "U?") (unit 8) (value "xc7z010clg400") (footprint "")
     )
-    (path "/d96bc03f-ed27-451b-9816-e768144feaa7"
+    (path "/be912085-bcd1-40c7-91f9-0a007e125679"
       (reference "U?") (unit 9) (value "xc7z010clg400") (footprint "")
     )
   )

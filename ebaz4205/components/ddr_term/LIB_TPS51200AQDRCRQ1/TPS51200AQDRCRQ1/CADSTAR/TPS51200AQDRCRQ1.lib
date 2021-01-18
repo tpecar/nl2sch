@@ -1,0 +1,18 @@
+.TPS51200AQDRCRQ1 :1 ;Sink and Source DDR Termination Regulator
+TPS51200AQDRCRQ1
+*STM IC
+*NGS
+*PLB 1="REFIN" 2="VLDOIN" 3="VO" 4="PGND" 5="VOSNS" 6="REFOUT" 7="EN" 8="GND" 9="PGOOD" 10="VIN" 11="EP_1" 12="EP_2" 13="EP_3" 14="EP_4" 15="EP_5"
+*MXP 15
+*DFN TPS51200AQDRCRQ1
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (TPS51200AQDRCRQ1)
+~!Mouser Part Number (595-TPS51200AQDRCRQ1)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS51200AQDRCRQ1?qs=l7cgNqFNU1gY%2FJNJPp%252Beiw%3D%3D)
+~!Arrow Part Number (TPS51200AQDRCRQ1)
+~!Link Arrow Price/Stock (https://www.arrow.com/en/products/tps51200aqdrcrq1/texas-instruments)
+~!Link Datasheet (http://www.ti.com/lit/gpn/TPS51200A-Q1)
+~!Height (1mm)
+~!3D_Model (TPS51200AQDRCRQ1)
+TPS51200AQDRCRQ1
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 

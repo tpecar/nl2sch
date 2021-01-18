@@ -1,0 +1,87 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Connector:TestPoint" (pin_numbers hide) (pin_names (offset 0.762) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "TP" (id 0) (at 0 6.858 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "TestPoint" (id 1) (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 5.08 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "test point tp" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "test point" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Pin* Test*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "TestPoint_0_1"
+        (circle (center 0 3.302) (radius 0.762) (stroke (width 0)) (fill (type none)))
+      )
+      (symbol "TestPoint_1_1"
+        (pin passive line (at 0 0 90) (length 2.54)
+          (name "1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (polyline (pts (xy 0 0) (xy 0 22.86))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 0) (xy 12.7 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 22.86) (xy 12.7 22.86))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 12.7 22.86) (xy 12.7 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+
+  (text "D TP.*\nF .*\nV .*" (at 0 0 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+
+  (global_label "1" (shape input) (at 6.35 10.16 270)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.2706 15.3066 90)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 6.35 10.16 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "61479f14-5e81-49e5-9f36-a1aa78a4ac52")
+    (property "Reference" "TP?" (id 0) (at 6.35 3.302 0))
+    (property "Value" "TestPoint" (id 1) (at 6.35 5.08 0))
+    (property "Footprint" "" (id 2) (at 11.43 10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 11.43 10.16 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/61479f14-5e81-49e5-9f36-a1aa78a4ac52"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
+  )
+)

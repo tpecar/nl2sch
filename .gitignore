@@ -44,5 +44,8 @@ nodeLanguageServer.*/**
 **/*.zip
 sample
 doc
-ebaz4205/components/
+ebaz4205/**/*.*
 !ebaz4205/components/*.kicad_sch
+!ebaz4205/components/*.kicad_sym
+!ebaz4205/components/**/*.kicad_sym
+!ebaz4205/components/**/*.lib

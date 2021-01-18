@@ -63,9 +63,9 @@ class SchComponent:
 
     def match(self, net_comp: NetComponent):
         if (
-            self.designator.match(net_comp.designator) and
-            self.footprint.match(net_comp.footprint) and
-            self.value.match(net_comp.value)
+            self.designator.fullmatch(net_comp.designator) and
+            self.footprint.fullmatch(net_comp.footprint) and
+            self.value.fullmatch(net_comp.value)
         ):
             return MatchedSchComponent(self, net_comp)
         else:
