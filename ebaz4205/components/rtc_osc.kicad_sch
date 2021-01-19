@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "osc:RTC_XTAL" (pin_names (offset 0.002) hide) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:RTC_XTAL" (pin_names (offset 0.002) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Y" (id 0) (at 0 24.13 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -227,9 +227,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "osc:RTC_XTAL") (at 25.4 31.75 0) (unit 1)
+  (symbol (lib_id "ebaz4205:RTC_XTAL") (at 25.4 31.75 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "dbf9dd4d-61b7-4301-9531-21965f4d9e29")
+    (uuid "e07edf04-01b1-4a56-b31b-6b42e5ac4a77")
     (property "Reference" "Y?" (id 0) (at 25.4 7.62 0))
     (property "Value" "RTC_XTAL" (id 1) (at 25.4 36.195 0))
     (property "Footprint" "" (id 2) (at 25.4 31.75 0)
@@ -245,7 +245,7 @@
   )
 
   (symbol_instances
-    (path "/dbf9dd4d-61b7-4301-9531-21965f4d9e29"
+    (path "/e07edf04-01b1-4a56-b31b-6b42e5ac4a77"
       (reference "Y?") (unit 1) (value "RTC_XTAL") (footprint "")
     )
   )

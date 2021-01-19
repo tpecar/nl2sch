@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "led:LED_dual" (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:LED_dual" (in_bom yes) (on_board yes)
       (property "Reference" "LED" (id 0) (at 0 11.43 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -173,9 +173,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "led:LED_dual") (at 19.05 12.7 0) (unit 1)
+  (symbol (lib_id "ebaz4205:LED_dual") (at 19.05 12.7 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "4f07d0b9-6382-4f67-aa08-10252bfbe8a1")
+    (uuid "a0b86502-3d7d-4dda-b6f5-e651bf2595fd")
     (property "Reference" "LED?" (id 0) (at 19.05 1.27 0))
     (property "Value" "LED_dual" (id 1) (at 19.05 20.32 0))
     (property "Footprint" "" (id 2) (at 16.51 12.7 0)
@@ -191,7 +191,7 @@
   )
 
   (symbol_instances
-    (path "/4f07d0b9-6382-4f67-aa08-10252bfbe8a1"
+    (path "/a0b86502-3d7d-4dda-b6f5-e651bf2595fd"
       (reference "LED?") (unit 1) (value "LED_dual") (footprint "")
     )
   )

@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Oscillator:TXC-7C" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:TXC-7C" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "X" (id 0) (at -5.08 6.35 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -109,9 +109,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "Oscillator:TXC-7C") (at 21.59 19.05 0) (unit 1)
+  (symbol (lib_id "ebaz4205:TXC-7C") (at 21.59 19.05 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "b298c0e7-919b-418b-b5b5-c0928fc08168")
+    (uuid "f0419c64-88e1-4fdd-b97e-2216ef49ef9a")
     (property "Reference" "X?" (id 0) (at 16.51 12.7 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -131,7 +131,7 @@
   )
 
   (symbol_instances
-    (path "/b298c0e7-919b-418b-b5b5-c0928fc08168"
+    (path "/f0419c64-88e1-4fdd-b97e-2216ef49ef9a"
       (reference "X?") (unit 1) (value "TXC-7C") (footprint "Oscillator:Oscillator_SMD_TXC_7C-4Pin_5.0x3.2mm")
     )
   )

@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "dcdc:J37I" (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:J37I" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -7.62 10.16 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -105,9 +105,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "dcdc:J37I") (at 24.13 24.13 0) (unit 1)
+  (symbol (lib_id "ebaz4205:J37I") (at 24.13 24.13 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "f251107d-b8e0-40c9-acd6-a86385a2ebd1")
+    (uuid "a6023c28-d335-409b-a393-868a17afea70")
     (property "Reference" "U?" (id 0) (at 16.51 13.97 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -127,7 +127,7 @@
   )
 
   (symbol_instances
-    (path "/f251107d-b8e0-40c9-acd6-a86385a2ebd1"
+    (path "/a6023c28-d335-409b-a393-868a17afea70"
       (reference "U?") (unit 1) (value "J37I") (footprint "")
     )
   )

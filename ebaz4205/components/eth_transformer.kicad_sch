@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "trafo:HST-0041SAR" (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:HST-0041SAR" (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "T" (id 0) (at 0 19.685 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -485,9 +485,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "trafo:HST-0041SAR") (at 30.48 22.86 0) (unit 1)
+  (symbol (lib_id "ebaz4205:HST-0041SAR") (at 30.48 22.86 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "e48ad1d8-9262-4b7c-b25a-d9f8f2d330e4")
+    (uuid "8fcc7767-69b2-40d1-bda5-4485b4e70619")
     (property "Reference" "T?" (id 0) (at 30.48 3.175 0))
     (property "Value" "HST-0041SAR" (id 1) (at 30.48 43.18 0))
     (property "Footprint" "" (id 2) (at 26.035 12.7 0)
@@ -503,7 +503,7 @@
   )
 
   (symbol_instances
-    (path "/e48ad1d8-9262-4b7c-b25a-d9f8f2d330e4"
+    (path "/8fcc7767-69b2-40d1-bda5-4485b4e70619"
       (reference "T?") (unit 1) (value "HST-0041SAR") (footprint "")
     )
   )

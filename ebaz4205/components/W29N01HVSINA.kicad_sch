@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "W29N01HVSINA:W29N01HVSINA" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:W29N01HVSINA" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
       (property "Reference" "IC" (id 0) (at 29.21 7.62 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -559,9 +559,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "W29N01HVSINA:W29N01HVSINA") (at 20.32 10.16 0) (unit 1)
+  (symbol (lib_id "ebaz4205:W29N01HVSINA") (at 20.32 10.16 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "f8dc103b-9f13-4a45-92f7-e5f24ef0cf75")
+    (uuid "0e5e40cb-92aa-42c9-981e-459ad0104c48")
     (property "Reference" "IC?" (id 0) (at 49.53 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -605,7 +605,7 @@
   )
 
   (symbol_instances
-    (path "/f8dc103b-9f13-4a45-92f7-e5f24ef0cf75"
+    (path "/0e5e40cb-92aa-42c9-981e-459ad0104c48"
       (reference "IC?") (unit 1) (value "W29N01HVSINA") (footprint "SOP50P2000X120-48N")
     )
   )

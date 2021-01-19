@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "eth:IP101GA" (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:IP101GA" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 0 41.91 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -580,9 +580,9 @@
     (effects (font (size 1.27 1.27)) (justify right))
   )
 
-  (symbol (lib_id "eth:IP101GA") (at 197.485 45.72 0) (unit 4)
+  (symbol (lib_id "ebaz4205:IP101GA") (at 197.485 45.72 0) (unit 4)
     (in_bom yes) (on_board yes)
-    (uuid "6af855aa-bc7c-45af-ab81-310b5b40c11f")
+    (uuid "edf1c410-9a90-4563-9174-fa9b01cfd231")
     (property "Reference" "U?" (id 0) (at 197.485 3.81 0))
     (property "Value" "IP101GA" (id 1) (at 197.485 6.35 0))
     (property "Footprint" "" (id 2) (at 187.325 57.15 0)
@@ -593,9 +593,9 @@
     )
   )
 
-  (symbol (lib_id "eth:IP101GA") (at 41.91 45.72 0) (unit 1)
+  (symbol (lib_id "ebaz4205:IP101GA") (at 41.91 45.72 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "c73b3085-2e42-4502-99e3-6187a3c2457b")
+    (uuid "a53c8fe3-4578-4a53-8b1e-b1b1f435d0aa")
     (property "Reference" "U?" (id 0) (at 41.91 3.81 0))
     (property "Value" "IP101GA" (id 1) (at 41.91 6.35 0))
     (property "Footprint" "" (id 2) (at 31.75 57.15 0)
@@ -606,9 +606,9 @@
     )
   )
 
-  (symbol (lib_id "eth:IP101GA") (at 160.02 45.72 0) (unit 3)
+  (symbol (lib_id "ebaz4205:IP101GA") (at 160.02 45.72 0) (unit 3)
     (in_bom yes) (on_board yes)
-    (uuid "8ad766b4-df3a-4a94-9274-63fd2886fd87")
+    (uuid "5e12ad9d-c6b7-429b-82d5-7a7c30328013")
     (property "Reference" "U?" (id 0) (at 160.02 3.81 0))
     (property "Value" "IP101GA" (id 1) (at 160.02 6.35 0))
     (property "Footprint" "" (id 2) (at 149.86 57.15 0)
@@ -619,9 +619,9 @@
     )
   )
 
-  (symbol (lib_id "eth:IP101GA") (at 101.6 45.72 0) (unit 2)
+  (symbol (lib_id "ebaz4205:IP101GA") (at 101.6 45.72 0) (unit 2)
     (in_bom yes) (on_board yes)
-    (uuid "65acbd75-c6b9-463e-a866-b9732c654e48")
+    (uuid "27849163-fd74-406d-b632-9e067de50650")
     (property "Reference" "U?" (id 0) (at 101.6 3.81 0))
     (property "Value" "IP101GA" (id 1) (at 101.6 6.35 0))
     (property "Footprint" "" (id 2) (at 91.44 57.15 0)
@@ -637,16 +637,16 @@
   )
 
   (symbol_instances
-    (path "/c73b3085-2e42-4502-99e3-6187a3c2457b"
+    (path "/a53c8fe3-4578-4a53-8b1e-b1b1f435d0aa"
       (reference "U?") (unit 1) (value "IP101GA") (footprint "")
     )
-    (path "/65acbd75-c6b9-463e-a866-b9732c654e48"
+    (path "/27849163-fd74-406d-b632-9e067de50650"
       (reference "U?") (unit 2) (value "IP101GA") (footprint "")
     )
-    (path "/8ad766b4-df3a-4a94-9274-63fd2886fd87"
+    (path "/5e12ad9d-c6b7-429b-82d5-7a7c30328013"
       (reference "U?") (unit 3) (value "IP101GA") (footprint "")
     )
-    (path "/6af855aa-bc7c-45af-ab81-310b5b40c11f"
+    (path "/edf1c410-9a90-4563-9174-fa9b01cfd231"
       (reference "U?") (unit 4) (value "IP101GA") (footprint "")
     )
   )

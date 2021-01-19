@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "osc:TXC-EBAZ" (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:TXC-EBAZ" (in_bom yes) (on_board yes)
       (property "Reference" "X" (id 0) (at -3.81 6.35 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -103,9 +103,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "osc:TXC-EBAZ") (at 21.59 19.05 0) (unit 1)
+  (symbol (lib_id "ebaz4205:TXC-EBAZ") (at 21.59 19.05 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "ae63eb83-1e27-44f0-8dbd-87ddcce5d5a0")
+    (uuid "03d4f010-fe8c-4b6e-a333-04227f2ab605")
     (property "Reference" "X?" (id 0) (at 17.78 12.7 0))
     (property "Value" "TXC-EBAZ" (id 1) (at 27.94 12.7 0))
     (property "Footprint" "" (id 2) (at 2.54 19.05 0)
@@ -121,7 +121,7 @@
   )
 
   (symbol_instances
-    (path "/ae63eb83-1e27-44f0-8dbd-87ddcce5d5a0"
+    (path "/03d4f010-fe8c-4b6e-a333-04227f2ab605"
       (reference "X?") (unit 1) (value "TXC-EBAZ") (footprint "")
     )
   )

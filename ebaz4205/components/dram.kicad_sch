@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "eec:MT41K128M16JT-125_AITK" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:MT41K128M16JT-125_AITK" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at 0 5.08 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -1077,9 +1077,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "eec:MT41K128M16JT-125_AITK") (at 26.67 13.97 0) (unit 1)
+  (symbol (lib_id "ebaz4205:MT41K128M16JT-125_AITK") (at 26.67 13.97 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "2c2f22ef-341a-4075-bac5-622a8d9fa374")
+    (uuid "b98b90ab-a4f5-41a5-825a-68ac08ea761c")
     (property "Reference" "U?" (id 0) (at 26.67 8.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -1160,9 +1160,9 @@
     )
   )
 
-  (symbol (lib_id "eec:MT41K128M16JT-125_AITK") (at 85.09 13.97 0) (unit 2)
+  (symbol (lib_id "ebaz4205:MT41K128M16JT-125_AITK") (at 85.09 13.97 0) (unit 2)
     (in_bom yes) (on_board yes)
-    (uuid "d9831f70-dc82-4019-9086-9eefaa4879a8")
+    (uuid "23732892-e64c-4f14-96b6-7af39ceb6332")
     (property "Reference" "U?" (id 0) (at 85.09 8.89 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -1248,10 +1248,10 @@
   )
 
   (symbol_instances
-    (path "/2c2f22ef-341a-4075-bac5-622a8d9fa374"
+    (path "/b98b90ab-a4f5-41a5-825a-68ac08ea761c"
       (reference "U?") (unit 1) (value "MT41K128M16JT-125_AITK") (footprint "Micron-JT-0-0-*")
     )
-    (path "/d9831f70-dc82-4019-9086-9eefaa4879a8"
+    (path "/23732892-e64c-4f14-96b6-7af39ceb6332"
       (reference "U?") (unit 2) (value "MT41K128M16JT-125_AITK") (footprint "Micron-JT-0-0-*")
     )
   )

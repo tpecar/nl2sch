@@ -3,11 +3,11 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "Connector:RJ45_LED" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:8P8C_LED" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at -5.08 13.97 0)
         (effects (font (size 1.27 1.27)) (justify right))
       )
-      (property "Value" "RJ45_LED" (id 1) (at 1.27 13.97 0)
+      (property "Value" "8P8C_LED" (id 1) (at 1.27 13.97 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
       (property "Footprint" "" (id 2) (at 0 0.635 90)
@@ -19,13 +19,13 @@
       (property "ki_keywords" "8P8C RJ female connector led" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs" (id 5) (at 0 0 0)
+      (property "ki_description" "RJ connector, 8P8C (8 positions 8 connected), two LEDs, RJ45" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "8P8C* RJ45*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "RJ45_LED_0_1"
+      (symbol "8P8C_LED_0_1"
         (rectangle (start 7.62 12.7) (end -7.62 -10.16)
           (stroke (width 0.254)) (fill (type background))
         )
@@ -259,7 +259,7 @@
           (stroke (width 0)) (fill (type none))
         )
       )
-      (symbol "RJ45_LED_1_1"
+      (symbol "8P8C_LED_1_1"
         (pin passive line (at 10.16 -7.62 180) (length 2.54)
           (name "~" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -403,13 +403,13 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "Connector:RJ45_LED") (at 22.86 19.05 0) (unit 1)
+  (symbol (lib_id "ebaz4205:8P8C_LED") (at 22.86 19.05 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "1d2d4ac0-ae24-4298-97cf-bc2bc96f293e")
+    (uuid "b32115c4-7117-4674-9823-c792d0c2392d")
     (property "Reference" "J?" (id 0) (at 17.78 5.08 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "RJ45_LED" (id 1) (at 24.13 5.08 0)
+    (property "Value" "8P8C_LED" (id 1) (at 24.13 5.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 22.86 18.415 90)
@@ -425,8 +425,8 @@
   )
 
   (symbol_instances
-    (path "/1d2d4ac0-ae24-4298-97cf-bc2bc96f293e"
-      (reference "J?") (unit 1) (value "RJ45_LED") (footprint "")
+    (path "/b32115c4-7117-4674-9823-c792d0c2392d"
+      (reference "J?") (unit 1) (value "8P8C_LED") (footprint "")
     )
   )
 )

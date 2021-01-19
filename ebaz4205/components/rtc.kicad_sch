@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "DS1307Z+:DS1307Z+" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:DS1307Z+" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
       (property "Reference" "IC" (id 0) (at 29.21 7.62 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -159,9 +159,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "DS1307Z+:DS1307Z+") (at 17.78 11.43 0) (unit 1)
+  (symbol (lib_id "ebaz4205:DS1307Z+") (at 17.78 11.43 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "1a2fe25b-95a4-457a-a3c1-14c40e796eea")
+    (uuid "6b4337e8-de15-4572-a255-b1b9a091293f")
     (property "Reference" "IC?" (id 0) (at 46.99 3.81 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -205,7 +205,7 @@
   )
 
   (symbol_instances
-    (path "/1a2fe25b-95a4-457a-a3c1-14c40e796eea"
+    (path "/6b4337e8-de15-4572-a255-b1b9a091293f"
       (reference "IC?") (unit 1) (value "DS1307Z+") (footprint "SOIC127P600X175-8N")
     )
   )

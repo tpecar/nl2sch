@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "TPS51200AQDRCRQ1:TPS51200AQDRCRQ1" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:TPS51200AQDRCRQ1" (pin_names (offset 0.762)) (in_bom yes) (on_board yes)
       (property "Reference" "IC" (id 0) (at 6.35 16.51 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -240,9 +240,9 @@
     (effects (font (size 1.27 1.27)) (justify left))
   )
 
-  (symbol (lib_id "TPS51200AQDRCRQ1:TPS51200AQDRCRQ1") (at 34.29 31.75 0) (unit 1)
+  (symbol (lib_id "ebaz4205:TPS51200AQDRCRQ1") (at 34.29 31.75 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "97fd596c-98c4-4e5f-92eb-2c7af2f5fec3")
+    (uuid "1c629502-4b99-4081-97e9-b3b31de977db")
     (property "Reference" "IC?" (id 0) (at 40.64 15.24 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -286,7 +286,7 @@
   )
 
   (symbol_instances
-    (path "/97fd596c-98c4-4e5f-92eb-2c7af2f5fec3"
+    (path "/1c629502-4b99-4081-97e9-b3b31de977db"
       (reference "IC?") (unit 1) (value "TPS51200AQDRCRQ1") (footprint "TPS51200AQDRCRQ1")
     )
   )

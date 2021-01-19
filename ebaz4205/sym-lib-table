@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name "eec")(type "Legacy")(uri "${KIPRJMOD}/components/dram/IC_Micron_MT41K128M16JT-125 AIT K/eec.lib")(options "")(descr ""))
-  (lib (name "trafo")(type "KiCad")(uri "${KIPRJMOD}/components/eth_trafo/trafo.kicad_sym")(options "")(descr ""))
+  (lib (name "ebaz4205")(type "KiCad")(uri "${KIPRJMOD}/components/ebaz4205.kicad_sym")(options "")(descr ""))
 )

@@ -3,7 +3,7 @@
   (paper "A4")
 
   (lib_symbols
-    (symbol "sd_card:Micro_SD_Card_mount" (in_bom yes) (on_board yes)
+    (symbol "ebaz4205:Micro_SD_Card_mount" (in_bom yes) (on_board yes)
       (property "Reference" "U" (id 0) (at -19.05 15.24 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -223,9 +223,9 @@
     (effects (font (size 1.27 1.27)) (justify right))
   )
 
-  (symbol (lib_id "sd_card:Micro_SD_Card_mount") (at 41.91 17.78 0) (unit 1)
+  (symbol (lib_id "ebaz4205:Micro_SD_Card_mount") (at 41.91 17.78 0) (unit 1)
     (in_bom yes) (on_board yes)
-    (uuid "3ad41296-4eb4-4c52-87e1-8ca5f9cee63d")
+    (uuid "4c19a587-49b3-4617-bbf5-4bf8f3aec7f7")
     (property "Reference" "U?" (id 0) (at 22.86 2.54 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
@@ -245,7 +245,7 @@
   )
 
   (symbol_instances
-    (path "/3ad41296-4eb4-4c52-87e1-8ca5f9cee63d"
+    (path "/4c19a587-49b3-4617-bbf5-4bf8f3aec7f7"
       (reference "U?") (unit 1) (value "Micro_SD_Card_mount") (footprint "")
     )
   )
