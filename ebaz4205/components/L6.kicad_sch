@@ -1,0 +1,198 @@
+(kicad_sch (version 20201015) (generator eeschema)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "led:LED_dual" (in_bom yes) (on_board yes)
+      (property "Reference" "LED" (id 0) (at 0 11.43 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "LED_dual" (id 1) (at 0 -7.62 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at -2.54 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (id 3) (at -2.54 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "LED_dual_0_0"
+        (text "G" (at 0 4.445 0)
+          (effects (font (size 1.27 1.27)))
+        )
+        (text "R" (at 0 -0.635 0)
+          (effects (font (size 1.27 1.27)))
+        )
+      )
+      (symbol "LED_dual_0_1"
+        (rectangle (start -4.445 5.715) (end 4.445 -5.715)
+          (stroke (width 0.0006)) (fill (type background))
+        )
+        (polyline
+          (pts
+            (xy -4.445 -2.54)
+            (xy 2.032 -2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -4.445 2.54)
+            (xy 2.032 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -1.27)
+            (xy 1.27 -3.81)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 1.27 3.81)
+            (xy 1.27 1.27)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 4.445 -2.54)
+            (xy 1.905 -2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 4.445 2.54)
+            (xy 1.905 2.54)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -1.27)
+            (xy -1.27 -3.81)
+            (xy 1.27 -2.54)
+            (xy -1.27 -1.27)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 3.81)
+            (xy -1.27 1.27)
+            (xy 1.27 2.54)
+            (xy -1.27 3.81)
+          )
+          (stroke (width 0.254)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.143 7.62)
+            (xy 0.381 9.144)
+            (xy -0.381 9.144)
+            (xy 0.381 9.144)
+            (xy 0.381 8.382)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0.127 6.604)
+            (xy 1.651 8.128)
+            (xy 0.889 8.128)
+            (xy 1.651 8.128)
+            (xy 1.651 7.366)
+          )
+          (stroke (width 0)) (fill (type none))
+        )
+      )
+      (symbol "LED_dual_1_1"
+        (pin input line (at -7.62 2.54 0) (length 3.048)
+          (name "A1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at -7.62 -2.54 0) (length 3.048)
+          (name "A2" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 8.255 2.54 180) (length 3.81)
+          (name "K1" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+        (pin input line (at 8.255 -2.54 180) (length 3.81)
+          (name "K2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+
+  (polyline (pts (xy 0 0) (xy 0 22.86))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 0) (xy 39.37 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 0 22.86) (xy 39.37 22.86))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+  (polyline (pts (xy 39.37 22.86) (xy 39.37 0))
+    (stroke (width 0) (type dash) (color 0 0 0 0))
+  )
+
+  (text "D LED6\nF .*\nV .*" (at 0 0 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+  )
+
+  (global_label "1" (shape input) (at 11.43 10.16 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.2834 10.0806 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "2" (shape input) (at 11.43 15.24 180)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 6.2834 15.1606 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify right))
+  )
+  (global_label "4" (shape input) (at 27.305 10.16 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 32.4516 10.0806 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+  (global_label "3" (shape input) (at 27.305 15.24 0)    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 32.4516 15.1606 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+
+    (effects (font (size 1.27 1.27)) (justify left))
+  )
+
+  (symbol (lib_id "led:LED_dual") (at 19.05 12.7 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid "4f07d0b9-6382-4f67-aa08-10252bfbe8a1")
+    (property "Reference" "LED?" (id 0) (at 19.05 1.27 0))
+    (property "Value" "LED_dual" (id 1) (at 19.05 20.32 0))
+    (property "Footprint" "" (id 2) (at 16.51 12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 16.51 12.7 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+
+  (symbol_instances
+    (path "/4f07d0b9-6382-4f67-aa08-10252bfbe8a1"
+      (reference "LED?") (unit 1) (value "LED_dual") (footprint "")
+    )
+  )
+)

@@ -71,10 +71,13 @@ class SchComponent:
         else:
             return None
     
+    @property
+    def symbol_lib_name(self):
+        return re.findall('\(symbol \"([^"]*)" ', self.lib_symbol)
+
     def __str__(self):
         # Quick and dirty description of the object
-        symbol_lib_name = re.findall('\(symbol \"([^"]*)" ', self.lib_symbol)
-        return f'{symbol_lib_name} Rules [Designator "{self.designator.pattern}" Footprint "{self.footprint.pattern}" Value "{self.value.pattern}"] Bounds {self.bounds}'
+        return f'{self.symbol_lib_name} Rules [Designator "{self.designator.pattern}" Footprint "{self.footprint.pattern}" Value "{self.value.pattern}"] Bounds {self.bounds}'
 
     @classmethod
     def loadFromFile(cls, sch_file_path : str) -> Any:

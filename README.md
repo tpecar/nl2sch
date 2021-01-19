@@ -64,7 +64,7 @@ The tool has no dependencies besides a standard Python 3 installation.
 The tool was developed with KiCad Version: (5.99.0-8214-g099ddb1517), release build
 
 ```
-./nl2sch.py ./ebaz4205/ebit_ad.Net ./ebaz4205/components/ ./ebaz4205/ebaz4205.kicad_sch --skip-missing
+./nl2sch.py ./ebaz4205/ebit_ad.Net ./ebaz4205/components/ ./ebaz4205/ebaz4205.kicad_sch --allow-missing-components --allow-missing-pins
 ```
 
 For viewing/editing the generated schematic, the following can help:

@@ -31,8 +31,13 @@ def main(arguments):
         help='Target Kicad (v5.99 / v6) schematic file'
     )
     parser.add_argument(
-        '-s', '--skip-missing',
+        '-ac', '--allow-missing-components',
         help='Skip NetComponent with no SchComponent matches',
+        action='store_true'
+    )
+    parser.add_argument(
+        '-ap', '--allow-missing-pins',
+        help='Allow SchComponents with missing pins',
         action='store_true'
     )
     parser.add_argument(
@@ -77,6 +82,7 @@ def main(arguments):
 
     # Phase 1 - match & collect
     no_skipped = 0
+    no_missing_pins = 0
 
     all_matched_comps : dict[SchComponent, list[MatchedSchComponent]] = DefaultDict(list)
 
@@ -87,20 +93,38 @@ def main(arguments):
         for sch_comp in sch_comps:
             match = sch_comp.match(net_comp)
             if match:
+
+                # Check if the matched SchComponent has all pins referenced by the netlist
+                for net_pin in match.net_comp.connections.keys():
+                    if net_pin not in sch_comp.label_tpls:
+                        msg = (
+                            f'{match.sch_comp.symbol_lib_name} ' +
+                            f'is missing pin {net_pin} for instance {match.net_comp.designator}'
+                        )
+                        if args.allow_missing_pins:
+                            print(f'WARN: {msg}')
+                            no_missing_pins += 1
+                        else:
+                            print(f'ERROR: {msg}')
+                            sys.exit(1)
+
                 all_matched_comps[sch_comp].append(match)
                 break
         else:
             # We didn't match any sch_comp
-            if args.skip_missing:
-                print(f'SKIPPING {net_comp_str}')
+            if args.allow_missing_components:
+                print(f'WARN: SKIPPING {net_comp_str}')
                 no_skipped += 1
             else:
                 print(f'ERROR: {net_comp_str} could not be mapped to any SchComponent')
                 sys.exit(1)
 
-    if args.skip_missing:
+    if args.allow_missing_components:
         print(f'Skipped {no_skipped} netlist components.')
-
+    
+    if args.allow_missing_pins:
+        print(f'Found {no_missing_pins} missing pins.')
+    
     # Phase 2 - place
 
     # Dump the components by descending pin count
@@ -143,6 +167,8 @@ def main(arguments):
             y += args.spacing
 
     # Render placed components into KiCad schematic
+
+    print(f'Writing schematic to {args.kicad_sch_path}')
 
     rendered_lib_symbol = '\n'.join([p.lib_symbol for p in all_matched_comps.keys()])
 
