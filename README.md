@@ -56,7 +56,15 @@ This is a development log, but it should give you a general idea
 
 ## Usage
 
-The tool has no dependencies besides a standard Python 3 installation.
+Python 3.9+ is required due to [PEP 585](https://www.python.org/dev/peps/pep-0585/). It can be worked around to Python 3.7+ if required.
+
+And while the base functionality works without dependencies, the tool relies on [pyexcel](https://pypi.org/project/pyexcel/) for XLS/ODS component group file reading.
+
+[Pipfile](https://docs.python-guide.org/dev/virtualenvs/) was provided and can be used to set up the virtualenv
+```
+pipenv install
+pipenv shell
+```
 
 The tool was developed with KiCad Version: (5.99.0-8214-g099ddb1517), release build
 
