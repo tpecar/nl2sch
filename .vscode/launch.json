@@ -10,7 +10,11 @@
             "type": "python",
             "request": "launch",
             "program": "nl2sch.py",
-            "args": ["./ebaz4205/ebit_ad.Net", "./ebaz4205/components/", "./ebaz4205/ebaz4205.kicad_sch", "--allow-missing-components", "--allow-missing-pins"],
+            "args": [
+                "./ebaz4205/ebit_ad.Net", "./ebaz4205/components/", "./ebaz4205/ebaz4205.kicad_sch",
+                "--component-grouping", "./ebaz4205/EBAZ4205_Kicad_recreation_effort__2021_01_24.ods",
+                "--allow-missing-components", "--allow-missing-pins"
+            ],
             "console": "integratedTerminal"
         },
         {

@@ -237,6 +237,27 @@ class MatchedSchComponent:
         )
 
 @dataclass
+class Text:
+    "Helper class to generate text descriptions"
+
+    text : str
+
+    def place(self, pos: tuple[float, float]):
+
+        rendered_symbol = f"""
+  (text "{self.text}" (at {0.635 + pos[0]} {6.985 + pos[1]} 0)
+    (effects (font (size 4 4)) (justify left bottom))
+  )"""
+  
+        return PlacedSchComponent(
+            None,
+            rendered_labels="",
+            rendered_symbol=rendered_symbol,
+            rendered_symbol_inst="",
+            pos=pos
+        )
+
+@dataclass
 class PlacedSchComponent:
     """
     KiCad schematic component + labels,

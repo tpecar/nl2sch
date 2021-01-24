@@ -11,7 +11,7 @@ This tool aims to, at least to some degree, make this possible.
 ## Input format specification
 
 Altium Designer allows export of the internal PCB netlist via the [Netlist Manager](https://www.altium.com/documentation/altium-designer/pcb-dlg-netlistmanagernetlist-manager-ad).
-It exports into the Protel netlist format, the specification for which is available in the [Protel 99 SE Training Manual - Schematic Capture](./Protel_99_SE_Training_Manual__Schematic_Capture.pdf)
+It exports into the Protel netlist format, the specification for which is available in the [Protel 99 SE Training Manual - Schematic Capture](http://dtv.mcot.net/data/manual/book1155396404.pdf)
 
 The alternative would be to use the pcbnew API to extract netlist information from there, but given that the Altium importer isn't complete yet, I thought it's best we try to interpret data from the source.
 
@@ -30,26 +30,23 @@ This format, at the time of writing, had no official documentation, so we need t
 
 ## Operation
 
-Since KiCad doesn't reconnect pins after you change the symbol, changing the symbol after the fact would be a
-royal pain in the ass.
+This is a development log, but it should give you a general idea
 
-So in order to get things right the first time:
+- for each symbol that can be generated you provide a separate kicad schematic, which contains
 
-- components matching rules (as a separate python file) are provided, by which the symbol gets assigned
-  - designator, footprint, value (can be wildcard, can be specific ID - 3 separate regexes basically)
+  - components matching rules, by which the symbol gets assigned - designator, footprint, value (can be wildcard, can be specific ID - 3 separate regexes basically)
   The first rule that matches gets used (as in firewall, so most specific rules first).
 
     Note that footprint is usually useless - capacitors are in different sizes on the PCB, but same symbol on the sch.
 
-  Each rule then specifies
-  - eeschema s-expr template for symbol (you provide ref, val)
-  - eeschema s-expr template for global labels (so that nets can be properly attached) (you provide net[pin_name].label net[pin_name].x net[pin_name].y)
-    Place such symbol in eeschema, set up nets, save, see how it gets saved
+  - the placed component + labels, from which we create
+  
+    - eeschema s-expr template for symbol
+    - eeschema s-expr template for global labels (so that nets can be properly attached)
 
-    - pin_name has to match netlist pin name
-    - netlist gets parsed and for each component a dict of pin names to its connected nets is made
+      - pin_name has to match netlist pin name
+      - netlist gets parsed and for each component a dict of pin names to its connected nets is made
 
-    the ref, val, net are variables provided by the engine, your string will be treated as an f-string and eval()-ed
   - bounding box (with labels included) - this is so that the engine can place symbols without overlapping
     It also allows us to do various vertical / horizontal packing of symbols in the future.
 
@@ -64,7 +61,7 @@ The tool has no dependencies besides a standard Python 3 installation.
 The tool was developed with KiCad Version: (5.99.0-8214-g099ddb1517), release build
 
 ```
-./nl2sch.py ./ebaz4205/ebit_ad.Net ./ebaz4205/components/ ./ebaz4205/ebaz4205.kicad_sch --allow-missing-components --allow-missing-pins
+./nl2sch.py ./ebaz4205/ebit_ad.Net ./ebaz4205/components/ ./ebaz4205/ebaz4205.kicad_sch --component-grouping ./ebaz4205/EBAZ4205_Kicad_recreation_effort__2021_01_24.ods --allow-missing-components --allow-missing-pins
 ```
 
 For viewing/editing the generated schematic, the following can help:
