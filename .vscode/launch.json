@@ -5,6 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 
+
         {
             "name": "Python: nl2sch",
             "type": "python",
@@ -31,6 +32,14 @@
             "request": "launch",
             "program": "comp.py",
             "args": ["./ebaz4205/components/R_US.kicad_sch", "./ebaz4205/test.kicad_sch"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: fplib",
+            "type": "python",
+            "request": "launch",
+            "program": "fplib.py",
+            "args": ["./ebaz4205/ebaz4205.kicad_pcb", "./ebaz4205/ebaz4205_assoc.kicad_pcb", "./ebaz4205/ebaz4205.pretty"],
             "console": "integratedTerminal"
         }
     ]
